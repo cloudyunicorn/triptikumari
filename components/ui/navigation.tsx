@@ -33,7 +33,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 from-portfolio-blue to-portfolio-purple bg-linear-to-br rounded-lg" />
-              <span className="text-xl font-bold">Tripti Goyal</span>
+              <span className="text-xl font-bold">Tripti Kumari</span>
             </div>
           </div>
 
