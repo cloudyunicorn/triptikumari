@@ -20,7 +20,8 @@ const experiences = [
     ],
     tags: ["Social Media", "Digital Strategy", "Meta Ads", "Content Creation"],
     icon: Rocket,
-    color: "text-blue-500"
+    iconClass: "text-portfolio-blue",
+    borderClass: "hover:border-portfolio-blue"
   },
   {
     title: "Merchandise Designer",
@@ -37,7 +38,8 @@ const experiences = [
     ],
     tags: ["Merchandise Design", "Product Lifecycle", "Vendor Management", "E-commerce"],
     icon: Palette,
-    color: "text-purple-500"
+    iconClass: "text-portfolio-purple",
+    borderClass: "hover:border-portfolio-purple"
   },
   {
     title: "Social Media Manager and Analyst",
@@ -51,7 +53,8 @@ const experiences = [
     ],
     tags: ["Social Media", "Analytics", "Content Strategy", "Brand Management"],
     icon: BarChart,
-    color: "text-green-500"
+    iconClass: "text-portfolio-green",
+    borderClass: "hover:border-portfolio-green"
   }
 ]
 
@@ -63,7 +66,7 @@ export default function ExperienceSection() {
   }
 
   return (
-    <section className="py-16 bg-linear-to-b from-muted/30 to-background relative overflow-hidden">
+    <section className="py-16 from-muted/30 to-background bg-linear-to-b relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <div className="container relative mx-auto px-4">
@@ -84,17 +87,17 @@ export default function ExperienceSection() {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <Card 
-                className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group border-l-4 border-l-transparent hover:border-l-blue-500"
+                className={`overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group border-l-4 border-l-transparent ${exp.borderClass}`}
                 onClick={() => toggleExpand(index)}
               >
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <div className="flex items-start gap-3">
                       <div className="p-2 bg-muted rounded-lg group-hover:scale-110 transition-transform">
-                        <exp.icon className={`h-5 w-5 ${exp.color}`} />
+                        <exp.icon className={`h-5 w-5 ${exp.iconClass}`} />
                       </div>
                       <div>
-                        <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
+                        <CardTitle className="text-xl group-hover:text-portfolio-blue transition-colors">
                           {exp.title}
                         </CardTitle>
                         <CardDescription className="text-base mt-1">
@@ -133,13 +136,13 @@ export default function ExperienceSection() {
                             className="flex items-start gap-3 animate-in fade-in slide-in-from-left-5"
                             style={{ animationDelay: `${idx * 100}ms` }}
                           >
-                            <div className="w-2 h-2 mt-2 rounded-full bg-blue-500 shrink-0" />
+                            <div className="w-2 h-2 mt-2 rounded-full bg-portfolio-blue shrink-0" />
                             <span className="text-foreground">{item}</span>
                           </li>
                         ))}
                       </ul>
                       <div className="flex justify-end mt-4">
-                        <ChevronUp className="h-5 w-5 text-muted-foreground group-hover:text-blue-600 transition-colors" />
+                        <ChevronUp className="h-5 w-5 text-muted-foreground group-hover:text-portfolio-blue transition-colors" />
                       </div>
                     </>
                   ) : (
@@ -147,7 +150,7 @@ export default function ExperienceSection() {
                       <p className="text-muted-foreground line-clamp-2 ml-10">
                         {exp.description[0]}
                       </p>
-                      <ChevronDown className="h-5 w-5 text-muted-foreground group-hover:text-blue-600 transition-colors" />
+                      <ChevronDown className="h-5 w-5 text-muted-foreground group-hover:text-portfolio-blue transition-colors" />
                     </div>
                   )}
                 </CardContent>

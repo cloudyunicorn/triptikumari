@@ -49,7 +49,7 @@ export default function StrengthsSection() {
   }, [])
 
   return (
-    <section className="py-16 bg-linear-to-b from-background via-blue-50/10 to-background dark:via-blue-900/5 relative overflow-hidden">
+    <section className="py-16 from-background via-portfolio-blue-light/5 to-background dark:via-portfolio-blue-dark/5 bg-linear-to-b relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,var(--border)_1px,transparent_0)] bg-size-[40px_40px] opacity-[0.02]" />
       
       <div className="container relative mx-auto px-4">
@@ -71,15 +71,15 @@ export default function StrengthsSection() {
             >
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-linear-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                    <strength.icon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                  <div className="p-3 from-portfolio-blue-light to-portfolio-purple-light dark:from-portfolio-blue-dark/30 dark:to-portfolio-purple-dark/30 bg-linear-to-br rounded-lg group-hover:scale-110 transition-transform">
+                    <strength.icon className="h-6 w-6 text-portfolio-blue" />
                   </div>
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-lg font-semibold group-hover:text-portfolio-blue transition-colors">
                         {strength.title}
                       </h3>
-                      <span className="text-sm font-medium text-blue-600 dark:text-blue-400 animate-in fade-in">
+                      <span className="text-sm font-medium text-portfolio-blue">
                         {animatedLevels[index]}%
                       </span>
                     </div>
@@ -89,7 +89,7 @@ export default function StrengthsSection() {
                     <Progress 
                       value={animatedLevels[index]} 
                       className="h-2 bg-muted"
-                      indicatorClassName="bg-gradient-to-r from-blue-500 to-purple-500 animate-in fade-in duration-1000"
+                      indicatorClassName="from-portfolio-blue to-portfolio-purple bg-gradient-to-r animate-in fade-in duration-1000"
                     />
                   </div>
                 </div>

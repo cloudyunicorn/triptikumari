@@ -32,8 +32,8 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-linear-to-br from-blue-600 to-purple-600" />
-              <span className="text-xl font-bold">Tripti Kumari</span>
+              <div className="h-8 w-8 from-portfolio-blue to-portfolio-purple bg-linear-to-br rounded-lg" />
+              <span className="text-xl font-bold">Tripti Goyal</span>
             </div>
           </div>
 
@@ -43,7 +43,7 @@ export default function Navigation() {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium hover:text-blue-600 transition-colors"
+                className="text-sm font-medium hover:text-portfolio-blue transition-colors"
               >
                 {item.label}
               </button>

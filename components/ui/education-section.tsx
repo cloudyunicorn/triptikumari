@@ -2,7 +2,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { GraduationCap, Calendar } from 'lucide-react'
-import { motion } from 'framer-motion'
 
 const education = [
   {
@@ -22,7 +21,7 @@ const education = [
 export default function EducationSection() {
   return (
     <section className="py-16 relative">
-      <div className="absolute inset-0 bg-linear-to-t from-background via-purple-50/10 to-background dark:via-purple-900/5" />
+      <div className="absolute inset-0 from-background via-portfolio-purple-light/5 to-background dark:via-portfolio-purple-dark/5 bg-linear-to-t" />
       
       <div className="container relative mx-auto px-4">
         <div className="text-center mb-12">
@@ -36,20 +35,19 @@ export default function EducationSection() {
         
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
           {education.map((edu, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
+              className="animate-in fade-in slide-in-from-bottom-5"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
               <Card className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] group">
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-linear-to-br from-purple-100 to-blue-100 dark:from-purple-900/30 dark:to-blue-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                      <GraduationCap className="h-6 w-6 text-purple-600 dark:text-purple-400" />
+                    <div className="p-3 from-portfolio-purple-light to-portfolio-blue-light dark:from-portfolio-purple-dark/30 dark:to-portfolio-blue-dark/30 bg-linear-to-br rounded-lg group-hover:scale-110 transition-transform">
+                      <GraduationCap className="h-6 w-6 text-portfolio-purple" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg group-hover:text-purple-600 transition-colors">
+                      <CardTitle className="text-lg group-hover:text-portfolio-purple transition-colors">
                         {edu.degree}
                       </CardTitle>
                       <CardDescription className="text-base mt-1">
@@ -66,7 +64,7 @@ export default function EducationSection() {
                   <p className="text-foreground">{edu.description}</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

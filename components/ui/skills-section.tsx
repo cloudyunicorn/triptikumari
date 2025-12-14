@@ -16,7 +16,8 @@ const skillCategories = [
       "Product Marketing",
       "Data & Insights"
     ],
-    color: "bg-blue-500"
+    iconClass: "text-portfolio-blue",
+    bgClass: "bg-portfolio-blue-light dark:bg-portfolio-blue-dark/20"
   },
   {
     title: "Analytical Skills",
@@ -27,7 +28,8 @@ const skillCategories = [
       "Competitive Analysis",
       "Analytics Platforms"
     ],
-    color: "bg-purple-500"
+    iconClass: "text-portfolio-purple",
+    bgClass: "bg-portfolio-purple-light dark:bg-portfolio-purple-dark/20"
   },
   {
     title: "Technical Tools",
@@ -38,7 +40,8 @@ const skillCategories = [
       "WhatsApp (Interakt)",
       "SEO Optimization"
     ],
-    color: "bg-green-500"
+    iconClass: "text-portfolio-green",
+    bgClass: "bg-green-100 dark:bg-green-900/20"
   },
   {
     title: "Strategic",
@@ -49,7 +52,8 @@ const skillCategories = [
       "Community Building",
       "Performance Marketing"
     ],
-    color: "bg-orange-500"
+    iconClass: "text-portfolio-orange",
+    bgClass: "bg-orange-100 dark:bg-orange-900/20"
   }
 ]
 
@@ -58,7 +62,7 @@ export default function SkillsSection() {
 
   return (
     <section className="py-16 relative">
-      <div className="absolute inset-0 bg-linear-to-b from-transparent via-blue-50/20 to-transparent dark:via-blue-900/10" />
+      <div className="absolute inset-0 from-transparent via-portfolio-blue-light/10 to-transparent dark:via-portfolio-blue-dark/5 bg-linear-to-b" />
       
       <div className="container relative mx-auto px-4">
         <div className="text-center mb-12">
@@ -79,8 +83,8 @@ export default function SkillsSection() {
             >
               <CardHeader>
                 <div className="flex items-center gap-3">
-                  <div className={`p-2 ${category.color} bg-opacity-10 rounded-lg`}>
-                    <category.icon className={`h-5 w-5 ${category.color.replace('bg-', 'text-')}`} />
+                  <div className={`p-2 ${category.bgClass} rounded-lg`}>
+                    <category.icon className={`h-5 w-5 ${category.iconClass}`} />
                   </div>
                   <CardTitle className="text-lg">{category.title}</CardTitle>
                 </div>
