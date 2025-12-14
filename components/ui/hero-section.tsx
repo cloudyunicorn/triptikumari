@@ -45,7 +45,7 @@ export default function HeroSection() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-in fade-in slide-in-from-left-5 duration-700 delay-100">
-              Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Tripti Goyal</span>
+              Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Tripti Kumari</span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl animate-in fade-in slide-in-from-left-5 duration-700 delay-200">
@@ -99,7 +99,7 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-4 bg-linear-to-r from-blue-500 to-purple-500 rounded-3xl blur-xl opacity-20 animate-pulse" />
               <Avatar className="h-64 w-64 border-4 border-background shadow-2xl relative z-10">
-                <AvatarImage src="/profile.jpg" alt="Tripti Goyal" />
+                <AvatarImage src="/profile.jpg" alt="Tripti Kumari" />
                 <AvatarFallback className="text-4xl bg-linear-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900">
                   TG
                 </AvatarFallback>

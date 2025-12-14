@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Tripti Goyal</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Tripti Kumari</h3>
             <p className="text-gray-400">
               Senior Social Media & Digital Marketing Professional
             </p>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Tripti Goyal. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Tripti Kumari. All rights reserved.</p>
         </div>
       </div>
     </footer>
