@@ -1,102 +1,131 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Zap, Target, Layers, Users, Handshake } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { Zap, Target, Layers, Users, Handshake, Star, CheckCircle2 } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const strengths = [
   {
     title: "Blending Creativity & Data",
     icon: Zap,
-    description: "Skilled in combining creative storytelling with data-driven insights to optimize campaigns",
-    level: 95
+    description: "Combining creative storytelling with data-driven insights to optimize campaigns and maximize engagement.",
+    highlights: ["Creative Strategy", "Analytics", "Optimization"]
   },
   {
     title: "Strategic Campaign Execution",
     icon: Target,
-    description: "Proven ability to plan, execute and manage high-performing digital campaigns",
-    level: 90
+    description: "Planning and managing high-performing digital campaigns from ideation to execution.",
+    highlights: ["Campaign Planning", "Performance Tracking", "ROI Focus"]
   },
   {
     title: "End-to-End Product Management",
     icon: Layers,
-    description: "Experience in managing products from concept to launch, including design and marketing",
-    level: 85
+    description: "Managing products from concept to launch, including design, marketing, and go-to-market strategy.",
+    highlights: ["Product Lifecycle", "Launch Strategy", "Market Research"]
   },
   {
     title: "Cross-Functional Collaboration",
     icon: Users,
-    description: "Strong interpersonal skills to collaborate effectively with multiple teams",
-    level: 92
+    description: "Collaborating effectively with design, development, and marketing teams to deliver results.",
+    highlights: ["Team Leadership", "Communication", "Project Coordination"]
   },
   {
     title: "Vendor & Stakeholder Management",
     icon: Handshake,
-    description: "Experienced in coordinating with vendors and stakeholders to achieve project goals",
-    level: 88
+    description: "Coordinating with vendors and stakeholders to achieve project goals on time and within budget.",
+    highlights: ["Vendor Relations", "Negotiations", "Quality Assurance"]
   }
 ]
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4 }
+  }
+}
+
 export default function StrengthsSection() {
-  const [animatedLevels, setAnimatedLevels] = useState(strengths.map(() => 0))
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimatedLevels(strengths.map(s => s.level))
-    }, 100)
-    return () => clearTimeout(timer)
-  }, [])
-
   return (
-    <section className="py-16 from-background via-portfolio-blue-light/5 to-background dark:via-portfolio-blue-dark/5 bg-linear-to-b relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,var(--border)_1px,transparent_0)] bg-size-[40px_40px] opacity-[0.02]" />
-      
-      <div className="container relative mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-in fade-in duration-700">
-            Key Strengths
+    <section className="py-16 md:py-24 bg-muted/30">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12 md:mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-primary mb-4">
+            <Star className="h-4 w-4" />
+            Core Competencies
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Key <span className="text-gradient">Strengths</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-700 delay-100">
-            Core competencies that drive results and deliver value
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Competencies that drive results and deliver value
           </p>
-        </div>
-        
-        <div className="max-w-4xl mx-auto space-y-6">
+        </motion.div>
+
+        {/* Strength cards - 2 column grid */}
+        <motion.div
+          className="max-w-4xl mx-auto grid md:grid-cols-2 gap-4"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           {strengths.map((strength, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-md transition-all duration-300 animate-in fade-in slide-in-from-left-5"
-              style={{ animationDelay: `${index * 150}ms` }}
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className={index === strengths.length - 1 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''}
             >
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 from-portfolio-blue-light to-portfolio-purple-light dark:from-portfolio-blue-dark/30 dark:to-portfolio-purple-dark/30 bg-linear-to-br rounded-lg group-hover:scale-110 transition-transform">
-                    <strength.icon className="h-6 w-6 text-portfolio-blue" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-semibold group-hover:text-portfolio-blue transition-colors">
-                        {strength.title}
-                      </h3>
-                      <span className="text-sm font-medium text-portfolio-blue">
-                        {animatedLevels[index]}%
-                      </span>
+              <Card className="h-full hover-lift border-border/50">
+                <CardContent className="p-5 md:p-6">
+                  {/* Header with icon */}
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="p-2.5 rounded-xl bg-primary/10 shrink-0">
+                      <strength.icon className="h-5 w-5 text-primary" />
                     </div>
-                    <p className="text-muted-foreground mb-3">
-                      {strength.description}
-                    </p>
-                    <Progress 
-                      value={animatedLevels[index]} 
-                      className="h-2 bg-muted"
-                      indicatorClassName="from-portfolio-blue to-portfolio-purple bg-gradient-to-r animate-in fade-in duration-1000"
-                    />
+                    <h3 className="font-semibold text-base md:text-lg pt-1">
+                      {strength.title}
+                    </h3>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+
+                  {/* Description */}
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {strength.description}
+                  </p>
+
+                  {/* Highlight tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {strength.highlights.map((highlight, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center gap-1.5 text-xs font-medium text-primary/80 bg-primary/5 px-2.5 py-1 rounded-full"
+                      >
+                        <CheckCircle2 className="h-3 w-3" />
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

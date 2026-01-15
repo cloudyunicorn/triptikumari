@@ -1,114 +1,127 @@
 "use client"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Brain, Target, TrendingUp, BarChart3 } from 'lucide-react'
-import { useState } from 'react'
+import { Brain, Target, TrendingUp, BarChart3, Palette, Zap } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "Core Skills",
+    title: "Core Expertise",
     icon: Brain,
-    skills: [
-      "Social Media Management",
-      "Content Creation",
-      "Lead Generation",
-      "Product Marketing",
-      "Data & Insights"
-    ],
-    iconClass: "text-portfolio-blue",
-    bgClass: "bg-portfolio-blue-light dark:bg-portfolio-blue-dark/20"
+    skills: ["Social Media Management", "Content Creation", "Lead Generation", "Product Marketing", "Data & Insights"]
   },
   {
-    title: "Analytical Skills",
+    title: "Analytics",
     icon: BarChart3,
-    skills: [
-      "Campaign Optimization",
-      "Trend Research",
-      "Competitive Analysis",
-      "Analytics Platforms"
-    ],
-    iconClass: "text-portfolio-purple",
-    bgClass: "bg-portfolio-purple-light dark:bg-portfolio-purple-dark/20"
+    skills: ["Campaign Optimization", "Trend Research", "Competitive Analysis", "Analytics Platforms"]
   },
   {
-    title: "Technical Tools",
+    title: "Technical",
     icon: TrendingUp,
-    skills: [
-      "Scheduling Tools",
-      "Meta Ads",
-      "WhatsApp (Interakt)",
-      "SEO Optimization"
-    ],
-    iconClass: "text-portfolio-green",
-    bgClass: "bg-green-100 dark:bg-green-900/20"
+    skills: ["Scheduling Tools", "Meta Ads", "WhatsApp (Interakt)", "SEO Optimization"]
   },
   {
     title: "Strategic",
     icon: Target,
-    skills: [
-      "Brand Strategy",
-      "Digital Growth",
-      "Community Building",
-      "Performance Marketing"
-    ],
-    iconClass: "text-portfolio-orange",
-    bgClass: "bg-orange-100 dark:bg-orange-900/20"
+    skills: ["Brand Strategy", "Digital Growth", "Community Building", "Performance Marketing"]
+  },
+  {
+    title: "Creative",
+    icon: Palette,
+    skills: ["Visual Design", "Copywriting", "Brand Identity", "Video Content"]
+  },
+  {
+    title: "Performance",
+    icon: Zap,
+    skills: ["ROI Optimization", "A/B Testing", "Conversion Tracking", "KPI Management"]
   }
 ]
 
-export default function SkillsSection() {
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08
+    }
+  }
+}
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4 }
+  }
+}
+
+export default function SkillsSection() {
   return (
-    <section className="py-16 relative">
-      <div className="absolute inset-0 from-transparent via-portfolio-blue-light/10 to-transparent dark:via-portfolio-blue-dark/5 bg-linear-to-b" />
-      
+    <section className="py-16 md:py-24 relative">
+      {/* Subtle background */}
+      <div className="absolute inset-0 gradient-bg opacity-50" />
+
       <div className="container relative mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-in fade-in duration-700">
-            Technical Skills
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12 md:mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="inline-flex items-center gap-2 text-sm font-medium text-primary mb-4">
+            <Brain className="h-4 w-4" />
+            Technical Expertise
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Skills & <span className="text-gradient">Capabilities</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-700 delay-100">
-            Proficient in crafting data-driven campaigns and optimizing performance across multiple platforms
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Proficient in crafting data-driven campaigns across multiple platforms
           </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        </motion.div>
+
+        {/* Skills grid */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+        >
           {skillCategories.map((category, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-lg transition-all duration-300 animate-in fade-in slide-in-from-bottom-5"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <div className={`p-2 ${category.bgClass} rounded-lg`}>
-                    <category.icon className={`h-5 w-5 ${category.iconClass}`} />
+            <motion.div key={index} variants={itemVariants}>
+              <Card className="h-full hover-lift border-border/50 bg-card/50">
+                <CardContent className="p-5 md:p-6">
+                  {/* Icon and title */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2.5 rounded-xl bg-primary/10">
+                      <category.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <h3 className="font-semibold text-lg">{category.title}</h3>
                   </div>
-                  <CardTitle className="text-lg">{category.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, idx) => (
-                    <Badge 
-                      key={idx} 
-                      variant="secondary"
-                      className={`mb-2 transition-all duration-300 ${
-                        hoveredSkill === skill ? 'scale-105 shadow-md' : ''
-                      }`}
-                      onMouseEnter={() => setHoveredSkill(skill)}
-                      onMouseLeave={() => setHoveredSkill(null)}
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+
+                  {/* Skills */}
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill, idx) => (
+                      <Badge
+                        key={idx}
+                        variant="secondary"
+                        className="text-xs font-normal"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
