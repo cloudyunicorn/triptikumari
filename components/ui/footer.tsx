@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="space-y-3">
               <h3 className="text-lg font-bold">Tripti Kumari</h3>
               <p className="text-sm text-muted-foreground">
-                Digital Marketing Professional specializing in social media and brand growth.
+                Digital Marketing Specialist | Social Media & Growth Strategist with 4+ years of experience.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
                 </a>
                 <span className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
-                  Kolkata, India
+                  New Delhi, India
                 </span>
               </div>
             </div>

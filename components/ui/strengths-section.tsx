@@ -6,34 +6,40 @@ import { motion } from 'framer-motion'
 
 const strengths = [
   {
-    title: "Blending Creativity & Data",
+    title: "Social Media Strategy & Growth",
     icon: Zap,
-    description: "Combining creative storytelling with data-driven insights to optimize campaigns and maximize engagement.",
-    highlights: ["Creative Strategy", "Analytics", "Optimization"]
+    description: "Drove multi-fold follower growth and 100%+ reach expansion across platforms through strategic content planning and trend-driven campaigns.",
+    highlights: ["Follower Growth", "Reach Expansion", "Community Building"]
   },
   {
-    title: "Strategic Campaign Execution",
+    title: "Performance Marketing & Digital Campaigns",
     icon: Target,
-    description: "Planning and managing high-performing digital campaigns from ideation to execution.",
-    highlights: ["Campaign Planning", "Performance Tracking", "ROI Focus"]
+    description: "Delivered high-engagement campaigns with consistent 5-figure views, leveraging Meta Ads and data-driven optimization.",
+    highlights: ["Meta Ads", "10K+ Daily Views", "Data-Driven"]
   },
   {
-    title: "End-to-End Product Management",
+    title: "Content Strategy & Brand Storytelling",
     icon: Layers,
-    description: "Managing products from concept to launch, including design, marketing, and go-to-market strategy.",
-    highlights: ["Product Lifecycle", "Launch Strategy", "Market Research"]
+    description: "Visual and video-led brand building with consistent messaging across all digital assets and platforms.",
+    highlights: ["Visual Content", "Brand Voice", "Digital Storytelling"]
   },
   {
-    title: "Cross-Functional Collaboration",
+    title: "Meta Ads & Interakt Automation",
     icon: Users,
-    description: "Collaborating effectively with design, development, and marketing teams to deliver results.",
-    highlights: ["Team Leadership", "Communication", "Project Coordination"]
+    description: "Large-scale outreach and conversions through Meta Ads campaigns and WhatsApp automation reaching 10,000+ users.",
+    highlights: ["WhatsApp Automation", "Lead Generation", "Conversions"]
   },
   {
-    title: "Vendor & Stakeholder Management",
+    title: "Product Marketing & Launch",
     icon: Handshake,
-    description: "Coordinating with vendors and stakeholders to achieve project goals on time and within budget.",
-    highlights: ["Vendor Relations", "Negotiations", "Quality Assurance"]
+    description: "Integrated digital promotion for multi-product launches including 150+ ISRO merchandise products across 30+ SKUs.",
+    highlights: ["Product Launch", "E-commerce", "150+ Products"]
+  },
+  {
+    title: "Collaboration & Vendor Management",
+    icon: Star,
+    description: "Multi-team coordination and timely delivery, managing vendor sourcing, sampling, quality checks and cross-functional execution.",
+    highlights: ["Cross-Functional", "Vendor Relations", "Timely Delivery"]
   }
 ]
 
@@ -74,7 +80,7 @@ export default function StrengthsSection() {
             Key <span className="text-gradient">Strengths</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Competencies that drive results and deliver value
+            Proven competencies that drive measurable business impact
           </p>
         </motion.div>
 
@@ -90,7 +96,6 @@ export default function StrengthsSection() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className={index === strengths.length - 1 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''}
             >
               <Card className="h-full hover-lift border-border/50">
                 <CardContent className="p-5 md:p-6">

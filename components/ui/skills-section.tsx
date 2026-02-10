@@ -7,34 +7,34 @@ import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "Core Expertise",
+    title: "Social Media & Content",
     icon: Brain,
-    skills: ["Social Media Management", "Content Creation", "Lead Generation", "Product Marketing", "Data & Insights"]
+    skills: ["Social Media Strategy", "Content Strategy", "Instagram & Reels Strategy", "Community Growth", "Digital Storytelling"]
   },
   {
-    title: "Analytics",
-    icon: BarChart3,
-    skills: ["Campaign Optimization", "Trend Research", "Competitive Analysis", "Analytics Platforms"]
-  },
-  {
-    title: "Technical",
-    icon: TrendingUp,
-    skills: ["Scheduling Tools", "Meta Ads", "WhatsApp (Interakt)", "SEO Optimization"]
-  },
-  {
-    title: "Strategic",
+    title: "Marketing & Campaigns",
     icon: Target,
-    skills: ["Brand Strategy", "Digital Growth", "Community Building", "Performance Marketing"]
+    skills: ["Performance Marketing", "Campaign Management", "Meta Ads", "Product Marketing", "Brand Building"]
   },
   {
-    title: "Creative",
+    title: "Analytics & Optimization",
+    icon: BarChart3,
+    skills: ["Analytics & Reporting", "SEO Content", "Data-Driven Optimization", "Competitive Analysis"]
+  },
+  {
+    title: "Automation & Outreach",
+    icon: TrendingUp,
+    skills: ["WhatsApp Automation (Interakt)", "WhatsApp Automation (Neo Dove)", "Lead Generation", "Customer Outreach"]
+  },
+  {
+    title: "Creative & Design",
     icon: Palette,
-    skills: ["Visual Design", "Copywriting", "Brand Identity", "Video Content"]
+    skills: ["Visual Design", "Video Content", "Brand Identity", "Merchandise Design", "Copywriting"]
   },
   {
-    title: "Performance",
+    title: "Strategy & Growth",
     icon: Zap,
-    skills: ["ROI Optimization", "A/B Testing", "Conversion Tracking", "KPI Management"]
+    skills: ["Digital Growth Strategy", "Cross-Functional Collaboration", "Vendor Management", "E-commerce Optimization"]
   }
 ]
 
@@ -75,13 +75,13 @@ export default function SkillsSection() {
         >
           <span className="inline-flex items-center gap-2 text-sm font-medium text-primary mb-4">
             <Brain className="h-4 w-4" />
-            Technical Expertise
+            Technical Skills
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Skills & <span className="text-gradient">Capabilities</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Proficient in crafting data-driven campaigns across multiple platforms
+            Expertise in content strategy, performance marketing, analytics-driven optimization and community building
           </p>
         </motion.div>
 

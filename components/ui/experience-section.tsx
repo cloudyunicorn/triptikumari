@@ -2,51 +2,97 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, ChevronDown, Rocket, Palette, BarChart, Briefcase } from 'lucide-react'
+import { Calendar, ChevronDown, Rocket, Palette, BarChart, Briefcase, Megaphone, ShoppingBag, Shirt, Heart, Users } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const experiences = [
   {
-    title: "Senior Executive - Social Media Marketing",
-    company: "Astroport Global (A unit of Space India Pvt Ltd.)",
-    period: "May 2024 - Dec 2024",
+    title: "Senior Social Media Marketing",
+    company: "Astroport Global (Space Group of Companies) | New Delhi",
+    period: "Jan 2025 – Dec 2025",
     description: [
-      "Lead & Execute comprehensive social media and digital strategies",
-      "Manage performance-driven campaigns using analytics and creative storytelling",
-      "Oversee end-to-end content creation, including graphics and videos",
-      "Optimise organic campaigns through Meta Ads and WhatsApp",
-      "Drive digital growth by leveraging trends and fostering community interaction"
+      "Scaled Instagram presence from 200 → 4.9K followers in 12 months through strategic content planning, collaborations, and trend-driven campaigns",
+      "Managed performance-driven campaigns using analytics and creative storytelling, achieving ~10K daily reel views and consistent engagement growth",
+      "Optimised organic reach via Meta Ads and WhatsApp (Interakt) automation, increasing monthly reach to 60K–115K accounts (+129%) and improving conversions",
+      "Oversaw end-to-end content creation, maintaining consistent brand voice across graphics and video assets while driving community interaction"
     ],
-    tags: ["Social Media", "Digital Strategy", "Meta Ads", "Content Creation"],
+    tags: ["Social Media", "Meta Ads", "Content Strategy", "Instagram Growth", "WhatsApp Automation"],
     icon: Rocket
   },
   {
-    title: "Merchandise Designer",
-    company: "Gnomon Astrotech Pvt. Ltd.",
-    period: "2023 - 2024",
+    title: "Merchandise & Design",
+    company: "Gnomon Astrotech Pvt. Ltd. (Space Group of Companies) | New Delhi",
+    period: "May 2024 – Dec 2024",
     description: [
-      "Spearheaded Official ISRO Merchandise launch with 150+ products",
-      "Directed product design and detailing with brand alignment",
-      "Coordinated vendor sourcing and sample testing",
-      "Created e-commerce website listings with SEO-friendly content",
-      "Managed daily WhatsApp outreach to 10,000+ users"
+      "Managed digital launch of 150+ official ISRO merchandise products across 30+ SKUs with integrated social promotion",
+      "Developed digital and social media creatives, boosting brand visibility and engagement",
+      "Optimized SEO-driven e-commerce listings, boosting organic discoverability and online sales performance",
+      "Collaborated on product design, packaging, pricing and positioning to maintain a premium brand image",
+      "Coordinated vendors on sampling and quality checks to ensure timely market-ready delivery"
     ],
-    tags: ["Merchandise Design", "Product Lifecycle", "E-commerce"],
+    tags: ["Merchandise Design", "SEO", "E-commerce", "Product Marketing"],
+    icon: ShoppingBag
+  },
+  {
+    title: "Merchandise Designer",
+    company: "Astroport Global (Space Group of Companies) | New Delhi",
+    period: "April 2023 – May 2024",
+    description: [
+      "Built and launched the Astroport merchandise line with a focus on branding and market readiness",
+      "Executed performance marketing creatives and supported Meta Ads campaigns for lead generation",
+      "Scaled customer outreach using Interakt WhatsApp automation for 10,000+ users"
+    ],
+    tags: ["Branding", "Meta Ads", "WhatsApp Automation", "Lead Generation"],
     icon: Palette
   },
   {
-    title: "Social Media Manager and Analyst",
-    company: "Space Foundation",
-    period: "2022 - 2023",
+    title: "Project Lead: Space Apparel & Prototypes",
+    company: "Space India Pvt. Ltd. | New Delhi",
+    period: "Jan 2023 – March 2023",
     description: [
-      "Conceptualised high-fidelity Gaganyaan Astronaut Suit Prototype",
-      "Designed functional glow-in-the-dark uniforms",
-      "Managed engaging content on various social media platforms",
-      "Analyzed performance using data-driven tools and strategies"
+      "Led an educational prototype project featuring a high-fidelity Gaganyaan Astronaut Suit for public showcases",
+      "Designed functional uniforms for astronomy professionals, combining practicality with visual storytelling"
     ],
-    tags: ["Social Media", "Analytics", "Content Strategy"],
+    tags: ["Project Leadership", "Product Design", "Visual Storytelling"],
+    icon: Shirt
+  },
+  {
+    title: "Social Media Manager & Analyst",
+    company: "Space Foundation",
+    period: "Aug 2022 – Dec 2022",
+    description: [
+      "Managed and executed social media strategy to promote science education, astronomy and space sciences across public, educational and media audiences",
+      "Created engaging, platform-specific content and analyzed performance using data-driven tools to optimize reach, engagement and impact",
+      "Managed social media and digital communication for social impact campaigns",
+      "Created posters, videos and promotional creatives for 50+ events and initiatives",
+      "Executed digital event promotion and coordinated with internal teams to ensure consistent brand messaging"
+    ],
+    tags: ["Social Media", "Analytics", "Content Strategy", "Digital Communication"],
     icon: BarChart
+  },
+  {
+    title: "Senior Executive – Social Media Marketing (Freelance)",
+    company: "Pariyaat | Assam (Hybrid)",
+    period: "June 2021 – Oct 2023",
+    description: [
+      "Managed end-to-end social media strategy and visual storytelling, directing professional photoshoots to elevate brand positioning in the fashion market",
+      "Leveraged trend research to produce high-impact digital campaigns that maintained consistent audience engagement and brand relevance"
+    ],
+    tags: ["Social Media", "Fashion Marketing", "Visual Storytelling", "Freelance"],
+    icon: Megaphone
+  },
+  {
+    title: "Social Media & Marketing Coordinator (Non-Profit)",
+    company: "Parikalpana | Assam (Hybrid)",
+    period: "Nov 2020 – Dec 2023",
+    description: [
+      "Managed social media and digital communication for social impact campaigns",
+      "Created posters, videos and promotional creatives for 50+ events and initiatives",
+      "Executed digital event promotion and coordinated with internal teams to ensure consistent brand messaging"
+    ],
+    tags: ["Non-Profit", "Social Media", "Event Promotion", "Digital Communication"],
+    icon: Heart
   }
 ]
 
@@ -90,7 +136,7 @@ export default function ExperienceSection() {
             Professional <span className="text-gradient">Experience</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            3+ years across digital marketing, social media management, and product design
+            4+ years across digital marketing, social media management, product marketing and brand growth
           </p>
         </motion.div>
 

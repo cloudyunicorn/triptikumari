@@ -8,10 +8,11 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const roles = [
+  "Digital Marketing Specialist",
   "Social Media Strategist",
-  "Digital Marketing Pro",
+  "Growth Strategist",
   "Brand Growth Expert",
-  "Content Creator",
+  "Content Strategist",
 ]
 
 // Animation variants
@@ -136,9 +137,11 @@ export default function HeroSection() {
               className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
               variants={fadeInUp}
             >
-              Result-driven Marketing Professional with{' '}
-              <span className="font-semibold text-foreground">3+ years</span> of experience
-              specializing in digital strategy, content creation, and brand growth.
+              Result-driven Social Media & Digital Marketing Professional with{' '}
+              <span className="font-semibold text-foreground">4+ years</span> of experience
+              driving brand growth, engagement and lead generation across multi-platform
+              ecosystems. Expertise in content strategy, performance marketing, analytics-driven
+              optimization and community building.
             </motion.p>
 
             {/* CTA buttons */}
@@ -187,7 +190,7 @@ export default function HeroSection() {
               </button>
               <span className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary" />
-                Kolkata, India
+                New Delhi, India
               </span>
             </motion.div>
           </motion.div>
@@ -229,7 +232,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                <span className="text-sm font-bold text-gradient">3+ Years</span>
+                <span className="text-sm font-bold text-gradient">4+ Years</span>
               </motion.div>
             </div>
           </motion.div>
