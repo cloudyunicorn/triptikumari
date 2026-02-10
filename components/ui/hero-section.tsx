@@ -1,7 +1,15 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Mail, Phone, Download, Linkedin, MapPin, ArrowDown } from 'lucide-react'
+import { Mail, Phone, Download, MapPin, ArrowDown } from 'lucide-react'
+
+const LinkedinIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+)
 import { toast } from 'sonner'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
@@ -170,9 +178,9 @@ export default function HeroSection() {
                 variant="ghost"
                 size="icon"
                 className="rounded-xl"
-                onClick={() => window.open('https://linkedin.com', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/tripti-kumari-3908aa131/', '_blank')}
               >
-                <Linkedin className="h-5 w-5" />
+                <LinkedinIcon className="h-5 w-5" />
               </Button>
             </motion.div>
 
