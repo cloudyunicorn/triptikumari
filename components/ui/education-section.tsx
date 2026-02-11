@@ -6,16 +6,16 @@ import { motion } from 'framer-motion'
 
 const education = [
   {
-    degree: "Post Graduate Diploma, Fashion/Apparel Design",
+    degree: "Post Graduation in Fashion Design",
     institution: "Pearl Academy",
-    period: "Jul 2018 - May 2020",
-    description: "Specialized in apparel design with focus on merchandise development",
+    period: "2018 – 2020",
+    description: "Specialized in fashion design with focus on apparel and merchandise development",
     icon: Award
   },
   {
-    degree: "B.Com (Hons), Marketing",
+    degree: "B.Com (Hons) in Marketing",
     institution: "Shri Shikshayatan College",
-    period: "2014 - 2017",
+    period: "2014 – 2017",
     description: "Graduated with honors in Marketing and Business Administration",
     icon: BookOpen
   }

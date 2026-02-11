@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Tripti Kumari | Senior Social Media & Digital Marketing',
-  description: 'Result-driven Marketing Professional with 3+ years of experience',
+  description: 'Result-driven Social Media & Digital Marketing Professional with 4+ years of experience driving brand growth, engagement and lead generation across multi-platform ecosystems.',
 }
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Toaster 
+          <Toaster
             position="top-right"
             toastOptions={{
               classNames: {
