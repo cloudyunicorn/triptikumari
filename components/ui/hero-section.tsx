@@ -85,7 +85,7 @@ export default function HeroSection() {
 
   const handleDownload = () => {
     toast.success('Resume download started!')
-    window.open('/resume.pdf', '_blank')
+    window.open('/Resume.pdf', '_blank')
   }
 
   const handleContact = () => {
