@@ -57,7 +57,7 @@ export default function Footer() {
             <div className="space-y-3">
               <h3 className="text-lg font-bold">Tripti Kumari</h3>
               <p className="text-sm text-muted-foreground">
-                Digital Marketing Specialist | Social Media & Growth Strategist with 4+ years of experience.
+                Digital Marketing & Social Media Growth Strategist with 4+ years of experience in Meta Ads, Conversion Funnels, Brand Building, and Revenue-Driven Campaigns.
               </p>
             </div>
 

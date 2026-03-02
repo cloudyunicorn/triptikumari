@@ -7,34 +7,34 @@ import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "Social Media & Content",
-    icon: Brain,
-    skills: ["Social Media Strategy", "Content Strategy", "Instagram & Reels Strategy", "Community Growth", "Digital Storytelling"]
-  },
-  {
-    title: "Marketing & Campaigns",
+    title: "Performance Marketing",
     icon: Target,
-    skills: ["Performance Marketing", "Campaign Management", "Meta Ads", "Product Marketing", "Brand Building"]
+    skills: ["Paid Media Strategy", "ROAS Optimization", "CPC & CTR Analysis", "Conversion Optimization", "Meta Ads"]
   },
   {
-    title: "Analytics & Optimization",
-    icon: BarChart3,
-    skills: ["Analytics & Reporting", "SEO Content", "Data-Driven Optimization", "Competitive Analysis"]
-  },
-  {
-    title: "Automation & Outreach",
+    title: "Strategy & Optimization",
     icon: TrendingUp,
-    skills: ["WhatsApp Automation (Interakt)", "WhatsApp Automation (Neo Dove)", "Lead Generation", "Customer Outreach"]
+    skills: ["Revenue Growth", "Funnel Optimization", "A/B Testing", "Campaign Experimentation"]
   },
   {
-    title: "Creative & Design",
+    title: "Brand & Content",
     icon: Palette,
-    skills: ["Visual Design", "Video Content", "Brand Identity", "Merchandise Design", "Copywriting"]
+    skills: ["Social Media Growth Strategy", "Content-Led Brand Building", "Product Marketing", "Digital Launch Execution"]
   },
   {
-    title: "Strategy & Growth",
+    title: "Automation & Tools",
     icon: Zap,
-    skills: ["Digital Growth Strategy", "Cross-Functional Collaboration", "Vendor Management", "E-commerce Optimization"]
+    skills: ["WhatsApp Automation (Interakt)", "Retargeting Funnels", "E-commerce Marketing", "Analytics-Driven Decision Making"]
+  },
+  {
+    title: "Collaboration",
+    icon: Brain,
+    skills: ["Cross-Functional Collaboration", "Vendor Management", "Team Coordination"]
+  },
+  {
+    title: "Tools & Platforms",
+    icon: BarChart3,
+    skills: ["Meta Ads Manager", "Instagram Business Suite", "Google Analytics", "Interakt", "SEO & Keyword Tools", "Canva", "Content Scheduling Tools"]
   }
 ]
 
@@ -81,7 +81,7 @@ export default function SkillsSection() {
             Skills & <span className="text-gradient">Capabilities</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Expertise in content strategy, performance marketing, analytics-driven optimization and community building
+            Expertise in performance marketing, conversion funnels, brand building, and revenue-driven campaigns
           </p>
         </motion.div>
 

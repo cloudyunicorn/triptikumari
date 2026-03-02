@@ -6,40 +6,40 @@ import { motion } from 'framer-motion'
 
 const strengths = [
   {
-    title: "Social Media Strategy & Growth",
-    icon: Zap,
-    description: "Drove multi-fold follower growth and 100%+ reach expansion across platforms through strategic content planning and trend-driven campaigns.",
-    highlights: ["Follower Growth", "Reach Expansion", "Community Building"]
-  },
-  {
-    title: "Performance Marketing & Digital Campaigns",
+    title: "Performance Marketing",
     icon: Target,
-    description: "Delivered high-engagement campaigns with consistent 5-figure views, leveraging Meta Ads and data-driven optimization.",
-    highlights: ["Meta Ads", "10K+ Daily Views", "Data-Driven"]
+    description: "Expert in managing Meta Ads budgets, executing full-funnel campaigns with A/B testing to optimise ROAS, CPC, CTR, and drive revenue-led growth.",
+    highlights: ["Paid Media Strategy", "ROAS", "Conversion Optimization"]
   },
   {
-    title: "Content Strategy & Brand Storytelling",
+    title: "Strategy & Optimization",
+    icon: Zap,
+    description: "Revenue-focused strategist with expertise in funnel optimization, A/B testing, and campaign experimentation to maximize business outcomes.",
+    highlights: ["Revenue Growth", "Funnel Optimization", "A/B Testing"]
+  },
+  {
+    title: "Brand & Content Strategy",
     icon: Layers,
-    description: "Visual and video-led brand building with consistent messaging across all digital assets and platforms.",
-    highlights: ["Visual Content", "Brand Voice", "Digital Storytelling"]
+    description: "Content-led brand building with social media growth strategy, product marketing, and digital launch execution across platforms.",
+    highlights: ["Brand Building", "Content Strategy", "Digital Launch"]
   },
   {
-    title: "Meta Ads & Interakt Automation",
+    title: "Automation & Retargeting",
     icon: Users,
-    description: "Large-scale outreach and conversions through Meta Ads campaigns and WhatsApp automation reaching 10,000+ users.",
-    highlights: ["WhatsApp Automation", "Lead Generation", "Conversions"]
+    description: "Built and automated 50,000+ WhatsApp user base through Interakt, strengthening retargeting funnels and improving repeat conversions.",
+    highlights: ["WhatsApp Automation", "Retargeting Funnels", "E-commerce"]
   },
   {
     title: "Product Marketing & Launch",
     icon: Handshake,
-    description: "Integrated digital promotion for multi-product launches including 150+ ISRO merchandise products across 30+ SKUs.",
-    highlights: ["Product Launch", "E-commerce", "150+ Products"]
+    description: "Led digital launch of 150+ ISRO merchandise products, generating ₹10L+ in revenue through integrated campaigns and e-commerce optimization.",
+    highlights: ["Product Launch", "₹10L+ Revenue", "150+ Products"]
   },
   {
-    title: "Collaboration & Vendor Management",
+    title: "Collaboration & Management",
     icon: Star,
-    description: "Multi-team coordination and timely delivery, managing vendor sourcing, sampling, quality checks and cross-functional execution.",
-    highlights: ["Cross-Functional", "Vendor Relations", "Timely Delivery"]
+    description: "Cross-functional collaboration and vendor management ensuring timely execution, quality assurance, and consistent brand messaging.",
+    highlights: ["Cross-Functional", "Vendor Management", "Team Coordination"]
   }
 ]
 

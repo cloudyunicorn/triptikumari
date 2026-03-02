@@ -16,11 +16,11 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const roles = [
-  "Digital Marketing Specialist",
-  "Social Media Strategist",
-  "Growth Strategist",
+  "Digital Marketing & Social Media Growth Strategist",
+  "Performance Marketing Specialist",
   "Brand Growth Expert",
   "Content Strategist",
+  "Revenue-Driven Campaigner",
 ]
 
 // Animation variants
@@ -145,11 +145,11 @@ export default function HeroSection() {
               className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
               variants={fadeInUp}
             >
-              Result-driven Social Media & Digital Marketing Professional with{' '}
+              Growth-focused Digital Marketing & Social Media Strategist with{' '}
               <span className="font-semibold text-foreground">4+ years</span> of experience
-              driving brand growth, engagement and lead generation across multi-platform
-              ecosystems. Expertise in content strategy, performance marketing, analytics-driven
-              optimization and community building.
+              in Meta Ads, Conversion Funnels, Brand Building, and Revenue-Driven Campaigns.
+              Proven track record of scaling engagement by 90%+ and generating multi-lakh
+              revenue through integrated digital strategies.
             </motion.p>
 
             {/* CTA buttons */}
@@ -233,15 +233,6 @@ export default function HeroSection() {
                 />
               </div>
 
-              {/* Experience badge */}
-              <motion.div
-                className="absolute -bottom-2 -right-2 glass px-4 py-2 rounded-full shadow-lg"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6 }}
-              >
-                <span className="text-sm font-bold text-gradient">4+ Years</span>
-              </motion.div>
             </div>
           </motion.div>
         </div>
