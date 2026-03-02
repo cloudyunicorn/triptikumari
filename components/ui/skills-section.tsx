@@ -4,39 +4,55 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Target, TrendingUp, BarChart3, Palette, Zap } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { cn } from "@/lib/utils"
 
 const skillCategories = [
   {
     title: "Performance Marketing",
     icon: Target,
+    color: "blue",
     skills: ["Paid Media Strategy", "ROAS Optimization", "CPC & CTR Analysis", "Conversion Optimization", "Meta Ads"]
   },
   {
     title: "Strategy & Optimization",
     icon: TrendingUp,
+    color: "green",
     skills: ["Revenue Growth", "Funnel Optimization", "A/B Testing", "Campaign Experimentation"]
   },
   {
     title: "Brand & Content",
     icon: Palette,
+    color: "purple",
     skills: ["Social Media Growth Strategy", "Content-Led Brand Building", "Product Marketing", "Digital Launch Execution"]
   },
   {
     title: "Automation & Tools",
     icon: Zap,
+    color: "orange",
     skills: ["WhatsApp Automation (Interakt)", "Retargeting Funnels", "E-commerce Marketing", "Analytics-Driven Decision Making"]
   },
   {
     title: "Collaboration",
     icon: Brain,
+    color: "rose",
     skills: ["Cross-Functional Collaboration", "Vendor Management", "Team Coordination"]
   },
   {
     title: "Tools & Platforms",
     icon: BarChart3,
+    color: "indigo",
     skills: ["Meta Ads Manager", "Instagram Business Suite", "Google Analytics", "Interakt", "SEO & Keyword Tools", "Canva", "Content Scheduling Tools"]
   }
 ]
+
+const colorMap = {
+  blue: "bg-blue-500/10 text-blue-500 border-blue-500/20",
+  green: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+  purple: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+  orange: "bg-orange-500/10 text-orange-500 border-orange-500/20",
+  rose: "bg-rose-500/10 text-rose-500 border-rose-500/20",
+  indigo: "bg-indigo-500/10 text-indigo-500 border-indigo-500/20",
+}
 
 // Animation variants
 const containerVariants = {
@@ -99,8 +115,11 @@ export default function SkillsSection() {
                 <CardContent className="p-5 md:p-6">
                   {/* Icon and title */}
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2.5 rounded-xl bg-primary/10">
-                      <category.icon className="h-5 w-5 text-primary" />
+                    <div className={cn(
+                      "p-2.5 rounded-xl border transition-colors",
+                      colorMap[category.color as keyof typeof colorMap]
+                    )}>
+                      <category.icon className="h-5 w-5" />
                     </div>
                     <h3 className="font-semibold text-lg">{category.title}</h3>
                   </div>

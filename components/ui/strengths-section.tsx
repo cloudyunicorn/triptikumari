@@ -3,45 +3,61 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Target, Layers, Users, Handshake, Star, CheckCircle2 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { cn } from "@/lib/utils"
 
 const strengths = [
   {
     title: "Performance Marketing",
     icon: Target,
+    color: "blue",
     description: "Expert in managing Meta Ads budgets, executing full-funnel campaigns with A/B testing to optimise ROAS, CPC, CTR, and drive revenue-led growth.",
     highlights: ["Paid Media Strategy", "ROAS", "Conversion Optimization"]
   },
   {
     title: "Strategy & Optimization",
     icon: Zap,
+    color: "green",
     description: "Revenue-focused strategist with expertise in funnel optimization, A/B testing, and campaign experimentation to maximize business outcomes.",
     highlights: ["Revenue Growth", "Funnel Optimization", "A/B Testing"]
   },
   {
     title: "Brand & Content Strategy",
     icon: Layers,
+    color: "purple",
     description: "Content-led brand building with social media growth strategy, product marketing, and digital launch execution across platforms.",
     highlights: ["Brand Building", "Content Strategy", "Digital Launch"]
   },
   {
     title: "Automation & Retargeting",
     icon: Users,
+    color: "orange",
     description: "Built and automated 50,000+ WhatsApp user base through Interakt, strengthening retargeting funnels and improving repeat conversions.",
     highlights: ["WhatsApp Automation", "Retargeting Funnels", "E-commerce"]
   },
   {
     title: "Product Marketing & Launch",
     icon: Handshake,
+    color: "amber",
     description: "Led digital launch of 150+ ISRO merchandise products, generating ₹10L+ in revenue through integrated campaigns and e-commerce optimization.",
     highlights: ["Product Launch", "₹10L+ Revenue", "150+ Products"]
   },
   {
     title: "Collaboration & Management",
     icon: Star,
+    color: "rose",
     description: "Cross-functional collaboration and vendor management ensuring timely execution, quality assurance, and consistent brand messaging.",
     highlights: ["Cross-Functional", "Vendor Management", "Team Coordination"]
   }
 ]
+
+const colorMap = {
+  blue: "bg-blue-500/10 text-blue-500 border-blue-500/20",
+  green: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+  purple: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+  orange: "bg-orange-500/10 text-orange-500 border-orange-500/20",
+  rose: "bg-rose-500/10 text-rose-500 border-rose-500/20",
+  amber: "bg-amber-500/10 text-amber-500 border-amber-500/20",
+}
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -101,8 +117,11 @@ export default function StrengthsSection() {
                 <CardContent className="p-5 md:p-6">
                   {/* Header with icon */}
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="p-2.5 rounded-xl bg-primary/10 shrink-0">
-                      <strength.icon className="h-5 w-5 text-primary" />
+                    <div className={cn(
+                      "p-2.5 rounded-xl border transition-colors shrink-0",
+                      colorMap[strength.color as keyof typeof colorMap]
+                    )}>
+                      <strength.icon className="h-5 w-5" />
                     </div>
                     <h3 className="font-semibold text-base md:text-lg pt-1">
                       {strength.title}

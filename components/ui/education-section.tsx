@@ -82,11 +82,11 @@ export default function EducationSection() {
                     </div>
                     <div>
                       <CardTitle className="text-base md:text-lg leading-tight">
-                        {edu.degree}
+                        {edu.institution}
                       </CardTitle>
                       <CardDescription className="mt-1 flex items-center gap-1.5">
                         <edu.icon className="h-3 w-3" />
-                        {edu.institution}
+                        {edu.degree}
                       </CardDescription>
                     </div>
                   </div>
