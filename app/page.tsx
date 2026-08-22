@@ -1,5 +1,6 @@
 import Navigation from '@/components/ui/navigation'
 import HeroSection from '@/components/ui/hero-section'
+import ClientsSection from '@/components/ui/clients-section'
 import SkillsSection from '@/components/ui/skills-section'
 import ExperienceSection from '@/components/ui/experience-section'
 import EducationSection from '@/components/ui/education-section'
@@ -16,6 +17,10 @@ export default function Home() {
           <HeroSection />
         </section>
         
+        <section id="clients">
+          <ClientsSection />
+        </section>
+
         <section id="skills">
           <SkillsSection />
         </section>
