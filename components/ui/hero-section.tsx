@@ -17,10 +17,10 @@ import { motion } from 'framer-motion'
 import { LogoLoop } from './logo-loop'
 
 const roles = [
-  "Digital Marketing Strategist",
-  "Performance Marketing Specialist",
-  "Brand Growth Expert",
-  "Revenue-Driven Campaigner",
+  "Digital Marketing Manager",
+  "Performance & Growth Marketing",
+  "Paid Media & Growth Strategist",
+  "ROAS & Funnel Specialist",
 ]
 const MetricItem = ({ value, label, highlight = false }: { value: string, label: string, highlight?: boolean }) => (
   <div className="flex flex-col items-center justify-center px-4">
@@ -34,14 +34,14 @@ const MetricItem = ({ value, label, highlight = false }: { value: string, label:
 )
 
 const loopItems = [
-  <MetricItem key="1" value="5 Years" label="of Experience" highlight />,
-  <MetricItem key="2" value="4+" label="Brands Scaled" />,
-  <MetricItem key="3" value="₹2L+" label="Ad Budgets Managed" />,
-  <MetricItem key="4" value="₹20L+" label="Revenue Generated" highlight />,
-  <MetricItem key="5" value="50K+" label="Users Automated" />,
-  <MetricItem key="6" value="150+" label="Products Launched" />,
-  <MetricItem key="7" value="92%+" label="Reach Increased" />,
-  <MetricItem key="8" value="20K+" label="Reel Views" />,
+  <MetricItem key="1" value="5+ Years" label="of Experience" highlight />,
+  <MetricItem key="2" value="10+" label="Client Brands Led" />,
+  <MetricItem key="3" value="₹1–2L" label="Monthly Ad Budgets / Client" />,
+  <MetricItem key="4" value="₹15–20L+" label="Sales Driven / Client" highlight />,
+  <MetricItem key="5" value="120%+" label="Reach Increased" />,
+  <MetricItem key="6" value="50K+" label="WhatsApp Community" />,
+  <MetricItem key="7" value="150+" label="Products Launched" />,
+  <MetricItem key="8" value="₹20L+" label="Campaign Revenue" highlight />,
 ]
 
 // Animation variants
@@ -167,10 +167,10 @@ export default function HeroSection() {
                 className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
                 variants={fadeInUp}
               >
-                Dedicated to scaling brands through performance-driven Meta Ads, conversion
-                funnels, and data-backed strategies. With <span className="font-semibold text-foreground">4+ years</span> of
-                experience, I have a proven track record of driving 90%+ reach along with
-                multi-lakh revenue generation through integrated digital campaigns.
+                Results-driven Digital Marketing Manager with <span className="font-semibold text-foreground">5+ years</span> of
+                experience delivering measurable business growth through performance marketing, paid media, and growth strategy.
+                Currently leading digital marketing for 10+ client brands, managing ₹1–2L monthly Meta ad budgets per client
+                while optimising ROI, ROAS, and customer acquisition.
               </motion.p>
 
               {/* CTA buttons */}

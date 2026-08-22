@@ -8,40 +8,40 @@ import { cn } from "@/lib/utils"
 
 const skillCategories = [
   {
-    title: "Performance Marketing",
+    title: "Performance & Paid Media",
     icon: Target,
     color: "blue",
-    skills: ["Paid Media Strategy", "ROAS Optimization", "CPC & CTR Analysis", "Conversion Optimization", "Meta Ads"]
+    skills: ["Paid Media Strategy", "Meta Ads Manager", "ROAS Optimization", "CPC, CTR & Conversion", "Campaign Experimentation", "Budget Management"]
   },
   {
-    title: "Strategy & Optimization",
+    title: "Growth & Funnel Strategy",
     icon: TrendingUp,
     color: "green",
-    skills: ["Revenue Growth", "Funnel Optimization", "A/B Testing", "Campaign Experimentation"]
+    skills: ["Revenue Growth", "Funnel Optimization", "A/B Testing", "Customer Acquisition", "E-commerce Marketing", "Digital Marketing Strategy"]
   },
   {
-    title: "Brand & Content",
+    title: "Brand, Content & Influencer",
     icon: Palette,
     color: "purple",
-    skills: ["Social Media Growth Strategy", "Content-Led Brand Building", "Product Marketing", "Digital Launch Execution"]
+    skills: ["Social Media Growth Strategy", "Content-Led Brand Building", "Influencer Marketing", "Product Marketing", "Digital Launch Execution", "Content Strategy"]
   },
   {
-    title: "Automation & Tools",
+    title: "Automation & Retention",
     icon: Zap,
     color: "orange",
-    skills: ["WhatsApp Automation (Interakt)", "Retargeting Funnels", "E-commerce Marketing", "Analytics-Driven Decision Making"]
+    skills: ["WhatsApp Automation", "Interakt CRM", "50K+ Community Funnels", "Retargeting Funnels", "Remarketing & Retention"]
   },
   {
-    title: "Collaboration",
-    icon: Brain,
-    color: "rose",
-    skills: ["Cross-Functional Collaboration", "Vendor Management", "Team Coordination"]
-  },
-  {
-    title: "Tools & Platforms",
+    title: "Analytics & Performance",
     icon: BarChart3,
     color: "indigo",
-    skills: ["Meta Ads Manager", "Instagram Business Suite", "Google Analytics", "Interakt", "SEO & Keyword Tools", "Canva", "Content Scheduling Tools"]
+    skills: ["GA4 (Google Analytics)", "Google Search Console", "Meta Business Suite", "SEO & Discoverability", "Performance Reporting", "Data-Driven Decision Making"]
+  },
+  {
+    title: "Tools, AI & Management",
+    icon: Brain,
+    color: "rose",
+    skills: ["AI Marketing Tools", "Canva", "Cross-Functional Collaboration", "Vendor Management", "Campaign Management", "Multi-Client Portfolio"]
   }
 ]
 

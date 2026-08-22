@@ -7,8 +7,8 @@ import { Toaster } from 'sonner'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tripti Kumari | Senior Social Media & Digital Marketing',
-  description: 'Result-driven Social Media & Digital Marketing Professional with 4+ years of experience driving brand growth, engagement and lead generation across multi-platform ecosystems.',
+  title: 'Tripti Kumari | Digital Marketing Manager | Performance & Growth Marketing',
+  description: 'Results-driven Digital Marketing Manager with 5+ years of experience delivering measurable business growth through performance marketing, paid media, growth strategy, and data-driven campaign execution.',
 }
 
 export default function RootLayout({

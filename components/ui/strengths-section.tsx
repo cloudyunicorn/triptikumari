@@ -7,46 +7,46 @@ import { cn } from "@/lib/utils"
 
 const strengths = [
   {
-    title: "Performance Marketing",
+    title: "Performance & Paid Media",
     icon: Target,
     color: "blue",
-    description: "Expert in managing Meta Ads budgets, executing full-funnel campaigns with A/B testing to optimise ROAS, CPC, CTR, and drive revenue-led growth.",
-    highlights: ["Paid Media Strategy", "ROAS", "Conversion Optimization"]
+    description: "Managing ₹1–2L monthly Meta ad budgets per client across 10+ brands, optimizing audience targeting, bidding strategies, ROI, ROAS, CPC, CTR, and customer acquisition.",
+    highlights: ["Meta Ads Manager", "ROAS & ROI Optimization", "A/B Testing"]
   },
   {
-    title: "Strategy & Optimization",
+    title: "Revenue Growth & Funnel Optimization",
     icon: Zap,
     color: "green",
-    description: "Revenue-focused strategist with expertise in funnel optimization, A/B testing, and campaign experimentation to maximize business outcomes.",
-    highlights: ["Revenue Growth", "Funnel Optimization", "A/B Testing"]
+    description: "Proven ability driving ₹15–20L+ client revenue, ₹20L+ campaign revenue at Pariyaat, and ₹10L+ in ISRO merchandise through data-backed conversion funnels and performance optimization.",
+    highlights: ["₹15–20L+ Client Sales", "Funnel Optimization", "Revenue-Led Strategy"]
   },
   {
-    title: "Brand & Content Strategy",
+    title: "Brand Strategy & Digital Launches",
     icon: Layers,
     color: "purple",
-    description: "Content-led brand building with social media growth strategy, product marketing, and digital launch execution across platforms.",
-    highlights: ["Brand Building", "Content Strategy", "Digital Launch"]
+    description: "Content-led brand building and product marketing, spearheading the digital launch of 150+ official ISRO merchandise products across 30+ SKUs and driving 120%+ brand reach growth.",
+    highlights: ["150+ Products Launched", "120%+ Reach Growth", "Influencer Marketing"]
   },
   {
-    title: "Automation & Retargeting",
+    title: "WhatsApp Automation & Retention",
     icon: Users,
     color: "orange",
-    description: "Built and automated 50,000+ WhatsApp user base through Interakt, strengthening retargeting funnels and improving repeat conversions.",
-    highlights: ["WhatsApp Automation", "Retargeting Funnels", "E-commerce"]
+    description: "Built and automated a 50,000+ WhatsApp user community via Interakt, setting up remarketing and retargeting funnels to strengthen customer retention and repeat conversions.",
+    highlights: ["50K+ WhatsApp Community", "Interakt Automation", "Retargeting Funnels"]
   },
   {
-    title: "Product Marketing & Launch",
+    title: "Analytics & Performance Insights",
     icon: Handshake,
     color: "amber",
-    description: "Led digital launch of 150+ ISRO merchandise products, generating ₹10L+ in revenue through integrated campaigns and e-commerce optimization.",
-    highlights: ["Product Launch", "₹10L+ Revenue", "150+ Products"]
+    description: "Leveraging GA4, Google Search Console, Meta Ads Manager, and AI tools to analyze full-funnel campaign metrics, extract actionable insights, and optimize digital strategies.",
+    highlights: ["GA4 & Search Console", "AI Marketing Tools", "Data-Driven ROI"]
   },
   {
-    title: "Collaboration & Management",
+    title: "Cross-Functional & Client Leadership",
     icon: Star,
     color: "rose",
-    description: "Cross-functional collaboration and vendor management ensuring timely execution, quality assurance, and consistent brand messaging.",
-    highlights: ["Cross-Functional", "Vendor Management", "Team Coordination"]
+    description: "Leading end-to-end digital marketing for 10+ client brands, coordinating cross-functional teams, agency stakeholders, and vendor management to ensure seamless execution.",
+    highlights: ["10+ Client Brands", "Vendor Management", "Cross-Functional Leadership"]
   }
 ]
 
