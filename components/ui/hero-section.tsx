@@ -17,10 +17,10 @@ import { motion } from 'framer-motion'
 import { LogoLoop } from './logo-loop'
 
 const roles = [
-  "Digital Marketing Manager",
-  "Performance & Growth Marketing",
-  "Paid Media & Growth Strategist",
-  "ROAS & Funnel Specialist",
+  "Social Media Marketing Manager",
+  "Brand Communication Specialist",
+  "Content Strategist",
+  "Multi Client Digital Marketing Expert",
 ]
 const MetricItem = ({ value, label, highlight = false }: { value: string, label: string, highlight?: boolean }) => (
   <div className="flex flex-col items-center justify-center px-4">
@@ -167,10 +167,7 @@ export default function HeroSection() {
                 className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
                 variants={fadeInUp}
               >
-                Results-driven Digital Marketing Manager with <span className="font-semibold text-foreground">5+ years</span> of
-                experience delivering measurable business growth through performance marketing, paid media, and growth strategy.
-                Currently leading digital marketing for 10+ client brands, managing ₹1–2L monthly Meta ad budgets per client
-                while optimising ROI, ROAS, and customer acquisition.
+                Results-driven Brand Marketing Professional with <span className="font-semibold text-foreground">5+ years</span> of experience building and growing brands through brand strategy, communication, digital marketing, social media, content, influencer marketing, and integrated campaigns. Experienced in managing multiple brands across D2C, lifestyle, technology, and consumer categories, while collaborating with clients, internal teams, creative partners, and key stakeholders to turn brand objectives into impactful campaigns and meaningful consumer engagement.
               </motion.p>
 
               {/* CTA buttons */}
