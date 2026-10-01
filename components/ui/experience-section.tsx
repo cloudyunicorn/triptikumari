@@ -7,19 +7,21 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    title: "Digital Marketing Manager",
-    company: "Mooncre Martech LLP",
+    title: "Social Media Marketing - Digital Marketing Manager",
+    company: "Mooncre Martech LLP (Agency)",
     location: "New Delhi",
     period: "March 2026 – Present",
     isCurrent: true,
     description: [
-      "Lead end-to-end digital marketing for 10+ client brands, driving business growth through performance marketing, paid media, and integrated campaign strategies.",
-      "Manage ₹1–2L monthly Meta ad budgets per client, optimizing audience targeting, bidding strategies, and campaign performance to maximize ROI, ROAS, and conversions.",
-      "Drive ₹15–20L+ revenue per client through data-driven Meta campaigns, conversion-focused funnels, and continuous performance optimization.",
-      "Strategize and execute content marketing initiatives, aligning campaign calendars with brand objectives, audience insights, and market trends to maximize engagement.",
-      "Leverage Meta Ads Manager, GA4, and Google Search Console to analyze campaign performance, deliver actionable insights, and optimize digital strategies in collaboration with clients."
+      "Experience in digital content creation and brand building and communication, brand marketing for 8+ consumer, electronics, gadget, D2C and lifestyle brands [Platforms - Instagram, Facebook, YouTube, LinkedIn, X].",
+      "Develop concept, storyboards, goals, content, social media and influencer strategies aligned with brand goals, audience insights and product priorities.",
+      "Plan content calendars across Reels, carousels, statics, stories and influencer collaborations.",
+      "Manage influencer identification, outreach, briefing, execution and performance tracking, use cases, launches, festive campaigns and sales communication for optimised reach and engagement.",
+      "Coordinate with designers, creators and clients to ensure brand-consistent and timely execution.",
+      "Manage ₹6-8L monthly Meta budgets, optimising targeting, creatives and campaigns for ROI, ROAS and conversions.",
+      "Use Meta Ads Manager, GA4 and Google Search Console to analyse performance and improve marketing strategies."
     ],
-    tags: ["Performance Marketing", "10+ Client Brands", "Meta Ads Manager", "GA4", "Search Console", "ROAS & ROI", "Growth Strategy"],
+    tags: ["Brand Marketing", "8+ Consumer Brands", "Influencer Marketing", "Content Strategy", "Meta Ads (₹6-8L)", "GA4", "ROAS & ROI"],
     icon: TrendingUp
   },
   {
